@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <meta http-equiv="refresh" content="5;url=https://lab.rmskhen.workers.dev">
-    
-    <title>rmskhen</title>
+    <title>./rmskhen</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +14,7 @@
         :root {
             color-scheme: light dark;
         }
-        
+
         body {
             font-family: 'Roboto Flex', sans-serif;
             margin: 0;
@@ -25,9 +23,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
             background-color: canvas;
             color: canvastext;
+        }
+
+        .content {
+            text-align: left;
         }
 
         h1 {
@@ -40,16 +41,15 @@
 
         p {
             font-size: 1.1rem;
-            margin-top: 1.5rem; 
+            margin-top: 1.5rem;
             line-height: 1.5;
-            opacity: 0.8; 
+            opacity: 0.8;
         }
 
         a {
             color: #7e22ce;
             text-decoration: none;
-            transition: color 0.15s ease-in-out, text-decoration-color 0.15s ease-in-out;
-            cursor: pointer;
+            transition: color 0.15s ease-in-out;
         }
 
         a:hover {
@@ -61,20 +61,18 @@
         }
 
         @media (prefers-color-scheme: dark) {
-            a {
-                color: #a855f7;
-            }
-            
-            a:hover {
-                color: #c084fc;
-            }
+            a { color: #a855f7; }
+            a:hover { color: #c084fc; }
         }
     </style>
 </head>
 <body>
-    <h1>Just a sec...</h1>
-    <p>
-        You’re being redirected. <br>
-        If nothing happens, <a href="https://lab.rmskhen.workers.dev">tap or click here</a>.</p>
+    <div class="content">
+        <h1>Just a sec...</h1>
+        <p>
+            You're being redirected.<br>
+            If nothing happens, <a href="https://lab.rmskhen.workers.dev">tap or click here</a>.
+        </p>
+    </div>
 </body>
 </html>
