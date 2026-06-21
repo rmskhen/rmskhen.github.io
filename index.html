@@ -3,14 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="5;url=https://rmskhen.pages.dev">
-    <title>rmskhen</title>
+    <meta http-equiv="refresh" content="4; url=https://rmskhen.pages.dev"-->
+    <!--link rel="icon" type="image/svg+xml" href=url(favicon.svg) /-->
+    <title>rmskhen — Redirecting</title>
     <style>
-    @font-face {
+    /* @font-face {
         font-display: swap;
         font-family: 'Inter';
         font-weight: 100 900;
         src: url(inter.woff2);
+    } */
+    @font-face {
+        font-display: swap;
+        font-family: 'Mozilla Text';
+        font-weight: 200 700;
+        src: url(mozillaText.woff2);
     }
     * {
         box-sizing: border-box;
@@ -19,11 +26,11 @@
     }
     page {
         box-sizing: border-box;
-        font-family: Inter
+        font-family: 'Mozilla Text'
     }
     header {
         background-color: #fffaf0;
-        border-bottom: 1px solid lightgrey;
+        border-bottom: 1px solid grey;
         display: block;
         height: 53px;
     }
@@ -39,16 +46,17 @@
         padding-top: 1.5rem;
         padding-bottom: 1.5rem
     }
+    main p + p {
+        margin-top: 1rem
+    }
     a {
         color: darkolivegreen;
-        text-decoration: none
+        text-decoration: underline dotted darkolivegreen;
+        text-underline-offset: 2px
     }
     a:hover {
         text-decoration: underline solid darkolivegreen;
         text-underline-offset: 2px
-    }
-    main * + * {
-        margin-top: 1rem
     }
     .noSpace {
         margin-bottom: 0;
@@ -59,8 +67,8 @@
     <header></header>
     <div class="contentWrap">
         <main>
-            <p>Redirecting...</p>
-            <p class="noSpace">If nothing happens in about 5 seconds, <a href="https://rmskhen.pages.dev">tap or click here</a>.</p>
+            <p>Redirecting in a few seconds...</p>
+            <p class="noSpace">If nothing happens, <a href="https://rmskhen.pages.dev">tap or click here</a>.</p>
         </main>
     </div>
 </page>
