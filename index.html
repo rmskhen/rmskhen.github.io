@@ -3,16 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="4; url=https://rmskhen.pages.dev"-->
-    <!--link rel="icon" type="image/svg+xml" href=url(favicon.svg) /-->
+    <!--meta http-equiv="refresh" content="4; url=https://rmskhen.pages.dev"-->
     <title>rmskhen — Redirecting</title>
     <style>
-    /* @font-face {
+    @font-face {
         font-display: swap;
         font-family: 'Inter';
         font-weight: 100 900;
         src: url(inter.woff2);
-    } */
+    }
     @font-face {
         font-display: swap;
         font-family: 'Mozilla Text';
@@ -22,53 +21,70 @@
     * {
         box-sizing: border-box;
         margin: 0;
-        padding: 0
+        padding: 0;
     }
     page {
         box-sizing: border-box;
-        font-family: 'Mozilla Text'
+        font-family: 'Inter';
     }
     header {
-        background-color: #fffaf0;
+        background-color: floralwhite;
         border-bottom: 1px solid grey;
         display: block;
-        height: 53px;
+    }
+    headerNav {
+        display: block;
+    }
+    headerNav placeHolder {
+        font-size: 1rem;
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        text-decoration: none;
     }
     .contentWrap {
         margin: 0 auto;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-        max-width: 800px
+        max-width: 800px;
     }
     main {
         font-size: 1rem;
-        line-height: 1.5rem;
         padding-top: 1.5rem;
-        padding-bottom: 1.5rem
+        padding-bottom: 1.5rem;
     }
     main p + p {
-        margin-top: 1rem
+        margin-top: 0.9rem;
     }
     a {
         color: darkolivegreen;
         text-decoration: underline dotted darkolivegreen;
-        text-underline-offset: 2px
+        text-underline-offset: 2px;
     }
     a:hover {
         text-decoration: underline solid darkolivegreen;
-        text-underline-offset: 2px
+        text-underline-offset: 2px;
     }
-    .noSpace {
+    h1 {
+        font-family: 'Mozilla Text';
+        padding-top: 1.8rem;
+        padding-bottom: 0.9rem;
+    }
+    /* .noSpace {
         margin-bottom: 0;
-    }
+    } */
     </style>
 </head>
 <page>
-    <header></header>
+    <header>
+        <headerNav>
+            <placeHolder>...</placeHolder>
+        </headerNav>
+    </header>
     <div class="contentWrap">
         <main>
-            <p>Redirecting in a few seconds...</p>
-            <p class="noSpace">If nothing happens, <a href="https://rmskhen.pages.dev">tap or click here</a>.</p>
+            <h1>Redirecting...</h1>
+            <p>You opened an address that’s no longer in use, so you’re being redirected.</p>
+            <p>If nothing happens in a few seconds, <a href="https://rmskhen.pages.dev">tap or click here</a> to continue.</p>
         </main>
     </div>
 </page>
