@@ -61,12 +61,12 @@
         a {
             color: #000;
             text-decoration: underline dotted dimgrey;
-            text-underline-offset: 2px
+            text-underline-offset: 3px
         }
 
         a:hover {
             text-decoration: underline solid dimgrey;
-            text-underline-offset: 2px
+            text-underline-offset: 3px
         }
 
         .heading-xxl-initial {
@@ -79,6 +79,26 @@
         .body-m {
             font-size: 19px;
             line-height: 25px
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #151515;
+                color: floralwhite;
+            }
+        
+            header {
+                background-color: #303030;
+            }
+        
+            a {
+                color: floralwhite;
+                text-decoration-color: floralwhite;
+            }
+        
+            a:hover {
+                text-decoration-color: floralwhite;
+            }
         }
     </style>
 </head>
