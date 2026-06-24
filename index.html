@@ -1,91 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="9; url=https://rmskhen.pages.dev">
     <title>rmskhen — Redirecting</title>
+    <meta name="description" content="Khen Ramos’ personal site.">
+    <meta http-equiv="refresh" content="5; url=https://rmskhen.pages.dev">
     <style>
-    @font-face {
-        font-display: swap;
-        font-family: 'Inter';
-        font-weight: 100 900;
-        src: url(inter.woff2);
-    }
-    @font-face {
-        font-display: swap;
-        font-family: 'Mozilla Text';
-        font-weight: 200 700;
-        src: url(mozillaText.woff2);
-    }
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    body {
-        box-sizing: border-box;
-        font-family: 'Inter';
-    }
-    header {
-        background-color: floralwhite;
-        border-bottom: 1px solid grey;
-        display: block;
-    }
-    nav {
-        display: block;
-    }
-    nav placeHolder {
-        font-size: 1.1rem;
-        display: inline-block;
-        padding: 1rem 1.5rem;
-        text-decoration: none;
-    }
-    .contentWrap {
-        margin: 0 auto;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        max-width: 800px;
-    }
-    main {
-        font-size: 1.1rem;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-    main p + p {
-        margin-top: 0.9rem;
-    }
-    a {
-        color: darkolivegreen;
-        text-decoration: underline dotted darkolivegreen;
-        text-underline-offset: 2px;
-    }
-    a:hover {
-        text-decoration: underline solid darkolivegreen;
-        text-underline-offset: 2px;
-    }
-    h1 {
-        font-family: 'Mozilla Text';
-        padding-top: 1.8rem;
-        padding-bottom: 0.9rem;
-    }
-    /* .noSpace {
-        margin-bottom: 0;
-    } */
+        @font-face {
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 100 700;
+            font-stretch: 100%;
+            font-display: swap;
+            src: url(./fonts/ibm-plex-sans.woff2);
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: IBM Plex Sans;
+            margin: 0;
+            padding: 0
+        }
+
+        main p+p {
+            margin-top: 1.5rem
+        }
+
+        header {
+            background-color: #d3d3d3;
+            display: block
+        }
+
+        nav {
+            display: block
+        }
+
+        nav p.placeholder {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            display: inline-block;
+            padding: .8rem 2rem
+        }
+
+        body {
+            box-sizing: border-box
+        }
+
+        main {
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            max-width: 960px
+        }
+
+        a {
+            color: #000;
+            text-decoration: underline dotted dimgrey;
+            text-underline-offset: 2px
+        }
+
+        a:hover {
+            text-decoration: underline solid dimgrey;
+            text-underline-offset: 2px
+        }
+
+        .heading-xxl-initial {
+            font-size: 53px;
+            line-height: 55px;
+            margin-top: 0;
+            margin-bottom: 1.5rem
+        }
+
+        .body-m {
+            font-size: 19px;
+            line-height: 25px
+        }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
-            <placeHolder>...</placeHolder>
+            <p class="placeholder">...</p>
         </nav>
     </header>
-    <div class="contentWrap">
-        <main>
-            <h1>Redirecting...</h1>
-            <p>You opened an address that’s no longer in use, so you’re being redirected.</p>
-            <p>If nothing happens in a few seconds, <a href="https://rmskhen.pages.dev">tap or click here</a> to continue.</p>
-        </main>
-    </div>
+    <main>
+        <h1 class="heading-xxl-initial">Redirecting.</h1>
+        <p class="body-m">You opened an address that’s no longer in use, so you’re being redirected.</p>
+        <p class="body-m">If nothing happens in a few seconds, <a href="https://rmskhen.pages.dev">tap or click here</a> to continue.</p>
+    </main>
 </body>
+
 </html>
