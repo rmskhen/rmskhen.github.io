@@ -1,123 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <link rel="preload" href="./ibm-plex-sans.woff2" as="font" type="font/woff2" crossorigin/>
-    <meta charset="utf-8">
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>rmskhen — Redirecting</title>
-    <meta name="description" content="Khen Ramos’ personal site.">
-    <meta http-equiv="refresh" content="5; url=https://rmskhen.pages.dev">
+    <meta name="description" content="Khen Ramos’ personal site." />
+    <meta http-equiv="refresh" content="10; url=https://rmskhen.pages.dev" />
+    <link
+      rel="preload"
+      href="./gsf.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <style>
-        @font-face {
-            font-family: IBM Plex Sans;
-            font-style: normal;
-            font-weight: 100 700;
-            font-stretch: 100%;
-            font-display: block;
-            src: url(./ibm-plex-sans.woff2);
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-        }
-
-        * {
-            box-sizing: border-box;
-            font-family: IBM Plex Sans;
-            margin: 0;
-            padding: 0
-        }
-
-        main p+p {
-            margin-top: 1.5rem
-        }
-
-        header {
-            background-color: #d3d3d3;
-            display: block
-        }
-
-        nav {
-            display: block
-        }
-
-        nav p.placeholder {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 20px;
-            display: inline-block;
-            padding: .8rem 2rem
-        }
-
+      :root {
+        --color-neutral-000: #1c1b1b;
+        --color-primary-095: #f6eeff;
+        --color-secondary-098: #fef7ff;
+        --color-secondary-020: #332d40;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: gsf;
+      }
+      body {
+        min-width: 320px;
+        background-color: var(--color-primary-095);
+        color: var(--color-neutral-000);
+      }
+      main {
+        margin: 0 auto;
+        padding: 3rem 2rem;
+        max-width: 730px;
+      }
+      main p + p {
+        margin-top: 1.5rem;
+      }
+      a {
+        color: var(--color-neutral-000);
+        text-decoration: underline dotted var(--color-neutral-000);
+        text-underline-offset: 2.5px;
+      }
+      a:hover {
+        color: var(--color-neutral-000);
+        text-decoration: underline solid var(--color-neutral-000);
+      }
+      @media (prefers-color-scheme: dark) {
         body {
-            box-sizing: border-box
+          background-color: var(--color-secondary-020);
+          color: var(--color-secondary-098);
         }
-
-        main {
-            margin: 0 auto;
-            padding: 3rem 2rem;
-            max-width: 960px
-        }
-
         a {
-            color: #000;
-            text-decoration: underline dotted dimgrey;
-            text-underline-offset: 3px
+          color: var(--color-secondary-098);
+          text-decoration: underline dotted var(--color-secondary-098);
         }
-
         a:hover {
-            text-decoration: underline solid dimgrey;
-            text-underline-offset: 3px
+          color: var(--color-secondary-098);
+          text-decoration: underline solid var(--color-secondary-098);
         }
-
-        .heading-xxl-initial {
-            font-size: 53px;
-            line-height: 55px;
-            margin-top: 0;
-            margin-bottom: 1.5rem
-        }
-
-        .body-m {
-            font-size: 19px;
-            line-height: 25px
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                background-color: #151515;
-            }
-
-            body {
-                background-color: #151515;
-                color: floralwhite;
-            }
-        
-            header {
-                background-color: #303030;
-            }
-        
-            a {
-                color: floralwhite;
-                text-decoration-color: floralwhite;
-            }
-        
-            a:hover {
-                text-decoration-color: floralwhite;
-            }
-        }
+      }
+      @font-face {
+        font-family: gsf;
+        font-style: oblique 0deg 10deg;
+        font-weight: 1 1000;
+        font-stretch: 25% 151%;
+        font-display: block;
+        src: url(./gsf.woff2) format("woff2");
+        unicode-range:
+          U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      .colossal {
+        font-size: 32px;
+        line-height: 35px;
+        margin-bottom: 1.5rem;
+        font-variation-settings:
+          "wdth" 90,
+          "ROND" 100;
+      }
+      .body-m {
+        font-size: 19px;
+        line-height: 25px;
+        font-variation-settings:
+          "wdth" 95,
+          "ROND" 50;
+      }
     </style>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <p class="placeholder">...</p>
-        </nav>
-    </header>
+  </head>
+  <body>
     <main>
-        <h1 class="heading-xxl-initial">Redirecting.</h1>
-        <p class="body-m">You opened an address that’s no longer in use, so you’re being redirected.</p>
-        <p class="body-m">If nothing happens in a few seconds, <a href="https://rmskhen.pages.dev">tap or click here</a> to continue.</p>
+      <div style="padding-top: 4rem">
+        <h1 class="colossal">Redirecting...</h1>
+        <p class="body-m">
+          You opened an address that’s no longer in use, so you’re being
+          redirected.
+        </p>
+        <p class="body-m">
+          If nothing happens in a few seconds,
+          <a href="https://rmskhen.pages.dev">tap or click here</a>
+          to continue.
+        </p>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>
