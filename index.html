@@ -2,110 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="robots" content="noindex, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>rmskhen — Redirecting</title>
+    <meta name="generator" content="Astro v7.3.3" />
     <meta name="description" content="Khen Ramos’ personal site." />
-    <meta http-equiv="refresh" content="10; url=https://rmskhen.pages.dev" />
-    <link
-      rel="preload"
-      href="./gsf.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
+    <link rel="canonical" href="https://rmskhen.pages.dev/" />
+    <!--meta http-equiv="refresh" content="5; url=https://rmskhen.pages.dev/" /-->
+    <!--script>
+      window.location.replace("https://rmskhen.pages.dev/");
+    </script-->
+    <meta
+      name="theme-color"
+      content="#fff8f6"
+      media="(prefers-color-scheme: light)"
     />
-    <style>
-      :root {
-        --color-neutral-000: #1c1b1b;
-        --color-primary-095: #f6eeff;
-        --color-secondary-098: #fef7ff;
-        --color-secondary-020: #332d40;
-      }
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: gsf;
-      }
-      body {
-        min-width: 320px;
-        background-color: var(--color-primary-095);
-        color: var(--color-neutral-000);
-      }
-      main {
-        margin: 0 auto;
-        padding: 3rem 2rem;
-        max-width: 730px;
-      }
-      main p + p {
-        margin-top: 1.5rem;
-      }
-      a {
-        color: var(--color-neutral-000);
-        text-decoration: underline dotted var(--color-neutral-000);
-        text-underline-offset: 2.5px;
-      }
-      a:hover {
-        color: var(--color-neutral-000);
-        text-decoration: underline solid var(--color-neutral-000);
-      }
-      @media (prefers-color-scheme: dark) {
-        body {
-          background-color: var(--color-secondary-020);
-          color: var(--color-secondary-098);
-        }
-        a {
-          color: var(--color-secondary-098);
-          text-decoration: underline dotted var(--color-secondary-098);
-        }
-        a:hover {
-          color: var(--color-secondary-098);
-          text-decoration: underline solid var(--color-secondary-098);
-        }
-      }
-      @font-face {
-        font-family: gsf;
-        font-style: oblique 0deg 10deg;
-        font-weight: 1 1000;
-        font-stretch: 25% 151%;
-        font-display: block;
-        src: url(./gsf.woff2) format("woff2");
-        unicode-range:
-          U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-          U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      .colossal {
-        font-size: 32px;
-        line-height: 35px;
-        margin-bottom: 1.5rem;
-        font-variation-settings:
-          "wdth" 90,
-          "ROND" 100;
-      }
-      .body-m {
-        font-size: 19px;
-        line-height: 25px;
-        font-variation-settings:
-          "wdth" 95,
-          "ROND" 50;
-      }
-    </style>
+    <meta
+      name="theme-color"
+      content="#1a110f"
+      media="(prefers-color-scheme: dark)"
+    />
+    <title>rmskhen \ Redirecting</title>
+    <link rel="stylesheet" href="/sitewideRedirect.css" />
   </head>
   <body>
     <main>
-      <div style="padding-top: 4rem">
-        <h1 class="colossal">Redirecting...</h1>
-        <p class="body-m">
-          You opened an address that’s no longer in use, so you’re being
-          redirected.
-        </p>
-        <p class="body-m">
-          If nothing happens in a few seconds,
-          <a href="https://rmskhen.pages.dev">tap or click here</a>
-          to continue.
-        </p>
-      </div>
+      <h1 class="visuallyHidden">Redirecting</h1>
+      <p>This address is no longer active.</p>
+      <p>
+        If you’re reading this, your browser may have blocked the automatic
+        redirect.
+      </p>
+      <p>
+        <a href="https://rmskhen.pages.dev/">Tap or click here to continue.</a>
+      </p>
     </main>
+    <footer>
+      <div id="footerRuler">
+        <hr role="presentation" />
+      </div>
+      <p>By Khen. All&nbsp;rights reserved.</p>
+    </footer>
   </body>
 </html>

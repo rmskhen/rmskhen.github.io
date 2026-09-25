@@ -1,0 +1,20 @@
+/*
+  # transport
+  strict-transport-security: max-age=63072000; includeSubDomains; preload
+
+  # browserBehavior
+  x-content-type-options: nosniff
+  x-xss-protection: 0
+  origin-agent-cluster: ?1
+
+  # framingAndIsolation
+  x-frame-options: DENY
+  cross-origin-opener-policy: same-origin
+  cross-origin-resource-policy: same-origin
+
+  # privacyAndFeatures
+  referrer-policy: strict-origin-when-cross-origin
+  permissions-policy: accelerometer=(), autoplay=(), bluetooth=(), camera=(), clipboard-read=(), display-capture=(), encrypted-media=(), gamepad=(), geolocation=(), gyroscope=(), hid=(), idle-detection=(), magnetometer=(), microphone=(), midi=(), payment=(), serial=(), sync-xhr=(), usb=(), xr-spatial-tracking=()
+
+  # contentSecurityPolicy
+  content-security-policy: default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; script-src 'unsafe-inline'; style-src 'self'
