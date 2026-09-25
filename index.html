@@ -7,9 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content="Astro v7.3.3" />
     <meta name="description" content="Khen Ramos’ personal site." />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; base-uri 'none'; form-action 'none'; script-src 'unsafe-inline'; style-src 'self'"
+    />
     <link rel="canonical" href="https://rmskhen.pages.dev/" />
     <meta http-equiv="refresh" content="5; url=https://rmskhen.pages.dev/" />
     <script>
+      if (window.top !== window.self) {
+        window.top.location = window.self.location;
+      }
       window.location.replace("https://rmskhen.pages.dev/");
     </script>
     <meta
